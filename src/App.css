@@ -1,0 +1,143 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Segoe UI", sans-serif;
+  
+}
+
+/* THEMES */
+body.light {
+  background: linear-gradient(135deg, #c5ea66, #4ba2a2);
+  color: white;
+}
+
+body.dark {
+  background: linear-gradient(135deg, #121212, #1e1e2f);
+  color: white;
+}
+
+/* FULL SCREEN CENTER */
+.app {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+
+}
+
+/* TOP BAR */
+.top-bar {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  margin-bottom: 20px;
+  justify-content: center;
+  max-width: 500px;
+  width: 100%;
+}
+
+/* SEARCH */
+.search-box {
+  margin-bottom: 20px;
+  color: blue;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  display: flex;
+}
+
+.search-box input {
+  padding: 10px;
+  width: 220px;
+  border-radius: 6px;
+  border: none;
+  color: blue;
+}
+
+.search-box button {
+  margin-left: 10px;
+  padding: 10px 16px;
+  border-radius: 6px;
+  border: none;
+  cursor: pointer;
+  color: blue;
+}
+
+/* CARD */
+.card {
+  background: white;
+  color: #333;
+  width: 320px;
+  padding: 20px;
+  border-radius: 14px;
+  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.25);
+  text-align: center;
+}
+
+body.dark .card {
+  background: #1f1f1f;
+  color: white;
+}
+
+.card img {
+  width: 120px;
+  border-radius: 50%;
+}
+
+/* STATS */
+.stats {
+  display: flex;
+  justify-content: space-between;
+  margin: 15px 0;
+}
+
+/* BUTTONS */
+.toggle {
+  padding: 6px 12px;
+  border-radius: 6px;
+  border: none;
+  cursor: pointer;
+}
+
+/* SPINNER */
+.spinner {
+  width: 40px;
+  height: 40px;
+  border: 4px solid #ddd;
+  border-top: 4px solid #000;
+  border-radius: 50%;
+  animation: spin 1s linear infinite;
+  margin: 15px;
+}
+
+@keyframes spin {
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+/* ERROR */
+.error {
+  margin-top: 10px;
+  color: #d55a5e;
+  text-align: center;
+}
+
+
+.search-box:hover input {
+  border: 4px solid pink;
+}
+
+.search-box:hover button{
+  border: 4px solid rgb(255, 0, 157);
+  box-shadow: #c5ea66;
+}
+
+.search-box input:focus {
+  outline: none;
+  border-color: deepskyblue;
+  box-shadow: 0 0 8px rgba(0, 191, 255, 0.6);
+}
